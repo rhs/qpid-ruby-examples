@@ -35,7 +35,7 @@ def send_and_wait(name, value)
   $msgr.put($msg)
   $msgr.send
 
-  $msgr.receive(-1)
+  $msgr.receive(1)
   $msgr.get($reply)
 end
 
